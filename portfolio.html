@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash Kumar | Portfolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: #eef2f7;
+        color: #222;
+        line-height: 1.6;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        background: #0b3d91;
+        color: #fff;
+        padding: 14px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 14px;
+        font-weight: bold;
+      }
+      nav a:hover {
+        color: #ffd54f;
+      }
+      .hero {
+        min-height: 90vh;
+        padding: 80px 8% 50px;
+        text-align: center;
+        background: linear-gradient(135deg, #0b3d91, #1976d2);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+      }
+      .hero img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #fff;
+      }
+      .hero h1 {
+        font-size: clamp(32px, 5vw, 48px);
+      }
+      .hero span {
+        color: #ffd54f;
+      }
+      .btn {
+        display: inline-block;
+        margin: 8px 6px 0;
+        padding: 10px 18px;
+        border-radius: 999px;
+        background: #fff;
+        color: #0b3d91;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .btn.secondary {
+        background: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+      }
+      section {
+        padding: 60px 8%;
+      }
+      h2 {
+        margin-bottom: 18px;
+      }
+      .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 18px;
+      }
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .skills span {
+        background: #1976d2;
+        color: #fff;
+        padding: 8px 14px;
+        border-radius: 20px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      form {
+        display: grid;
+        gap: 12px;
+        max-width: 500px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #bbb;
+        border-radius: 8px;
+      }
+      button {
+        padding: 11px;
+        border: 0;
+        border-radius: 8px;
+        background: #0b3d91;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #1976d2;
+      }
+      footer {
+        background: #111;
+        color: #fff;
+        text-align: center;
+        padding: 24px 8%;
+      }
+      @media (max-width: 700px) {
+        header {
+          justify-content: center;
+        }
+        nav {
+          text-align: center;
+        }
+        nav a {
+          display: inline-block;
+          margin: 6px 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Yash Kumar</h2>
+      <nav>
+        <a href="#about">About</a><a href="#edu">Education</a
+        ><a href="#skills">Skills</a><a href="#ach">Achievements</a
+        ><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <img src="WhatsApp Image 2026-08-03 at 1.44.43 AM.jpg" alt="Yash Kumar profile photo" />
+      <h1>Hi, I'm <span>Yash Kumar</span></h1>
+      <p>
+        B.Tech CSE Student | Java Developer | Frontend Developer | AI Enthusiast
+      </p>
+      <div>
+        <a class="btn" href="#projects">View Projects</a
+        ><a class="btn secondary" href="#contact">Contact Me</a>
+      </div>
+    </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I am pursuing B.Tech in Computer Science Engineering at KL University.
+          I enjoy Java, DSA, Web Development, AI, and solving programming
+          problems. My goal is to become a Software Engineer at a top
+          product-based company.
+        </p>
+      </div>
+    </section>
+    <section id="edu">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>B.Tech CSE</h3>
+          <p>KL University<br />2025-Present</p>
+        </div>
+        <div class="card">
+          <h3>Class XII</h3>
+          <p>CBSE Board<br />66%</p>
+        </div>
+        <div class="card">
+          <h3>Class X</h3>
+          <p>CBSE Board</p>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Java</span><span>C</span><span>Python</span><span>HTML</span
+        ><span>CSS</span><span>JavaScript</span><span>Git</span
+        ><span>GitHub</span><span>DSA</span>
+      </div>
+    </section>
+    <section id="ach">
+      <h2>Achievements</h2>
+      <div class="card">
+        <ul>
+          <li>Learning Java and Data Structures</li>
+          <li>Building full stack web applications</li>
+          <li>Completed academic projects</li>
+          <li>Preparing for product-based placements</li>
+          <li>Active GitHub learner</li>
+        </ul>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Portfolio Website</h3>
+          <p>Responsive portfolio using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="card">
+          <h3>Student Management System</h3>
+          <p>
+            A Java-based app to manage student records, attendance, and results.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Smart Campus</h3>
+          <p>Navigation and resource analytics system.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="form">
+        <input id="name" type="text" placeholder="Full Name" required /><input
+          id="email"
+          type="email"
+          placeholder="Email"
+          required
+        /><input type="text" placeholder="Phone Number" /><input
+          type="text"
+          placeholder="College"
+        /><textarea rows="4" placeholder="Message"></textarea
+        ><button type="submit">Submit</button>
+      </form>
+    </section>
+    <footer>
+      <p>Designed and Developed by <b>Yash Kumar</b></p>
+      <p>© 2026 All Rights Reserved.</p>
+    </footer>
+    <script>
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Thank you! Form submitted successfully.");
+        this.reset();
+        document.getElementById("name").focus();
+      });
+    </script>
+  </body>
+</html>
